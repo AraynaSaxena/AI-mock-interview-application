@@ -1,54 +1,65 @@
-# React + TypeScript + Vite
+# AI Mock Interview Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-powered mock interview platform that helps students and early-career engineers practice technical interviews with real-time questions, structured feedback, and performance insights.
 
-Currently, two official plugins are available:
+Built to simulate realistic interview scenarios and highlight gaps in conceptual understanding, communication, and problem-solving.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Role-specific mock interviews (e.g., Software Engineer, Full Stack Developer)
+- AI-generated technical questions (Java, CS fundamentals, system thinking)
+- Automated evaluation with detailed feedback and scoring
+- Webcam-enabled interview experience
+- Structured interview flow: setup → interview → feedback
+- Clean, responsive UI
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠️ Tech Stack
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Frontend:** React + TypeScript
+- **Build Tool:** Vite
+- **Styling:** Modern CSS / utility-based styling
+- **AI Integration:** LLM-based question generation and evaluation
+- **Web APIs:** Webcam access, form handling
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+## 📸 Screenshots
+
+### Landing & Interview Setup
+<p float="left">
+  <img src="docs/landing.jpeg" width="45%" />
+</p>
+
+### Interview Experience
+<p float="left">
+  <img src="docs/Interview1.jpeg" width="45%" />
+  <img src="docs/Interview2.jpeg" width="45%" />
+</p>
+
+### AI Feedback & Evaluation
+<p align="center">
+  <img src="docs/feedback.jpeg" width="60%" />
+</p>
+
+---
+
+## 🧠 How It Works
+
+1. User selects a job role and provides basic requirements  
+2. AI generates role-appropriate interview questions  
+3. User answers questions in a simulated interview environment  
+4. System evaluates responses and provides structured feedback  
+5. User receives actionable insights on strengths and weaknesses  
+
+---
+
+## ▶️ Running Locally
+
+```bash
+npm install
+npm run dev
+
